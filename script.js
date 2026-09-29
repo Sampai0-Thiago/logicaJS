@@ -107,7 +107,6 @@ function valoresIguais(){
     }
 }
 
-
 function valorPositivoNegativo(){
     let number = Number(prompt("Digite um número positivo ou negativo"));
 
@@ -121,4 +120,17 @@ function valorPositivoNegativo(){
         alert("Digite uma valor maior ou menor que 0");
         valorPositivoNegativo()
     }
+}
+
+
+function valorBooleano(){
+    let bool1 = Boolean(Number(prompt("Digite true ou false")));
+    let bool2 = Boolean(Number(prompt("Digite true ou false")));
+
+    if(bool1 === false && bool2 === false){
+        alert("Ambos são falsos")
+    } else {
+        alert("Ambos são verddeiros")
+    }
+
 }
