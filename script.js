@@ -93,3 +93,32 @@ function imparPar(){
     }
 
 }
+
+function valoresIguais(){
+    let num1 = Number(prompt("Digite um número inteiro"));
+    let num2 = Number(prompt("Digite um número inteiro"));
+
+    if (num1 === num2){
+        let soma = num1 + num2;
+        alert(`${soma}  Por serem iguais, somamos`)
+    } else {
+        let mult = num1 * num2;
+        alert(mult + " Por serem diferentes, multiplicammos ")
+    }
+}
+
+
+function valorPositivoNegativo(){
+    let number = Number(prompt("Digite um número positivo ou negativo"));
+
+    if(number > 0){
+        let dobro = number *2;
+        alert("O dobro desse número é : " + dobro);
+    } else if (number < 0) {
+        let triplo = number *3 ;
+        alert("O triplo esse valor é : " + triplo);
+    } else{
+        alert("Digite uma valor maior ou menor que 0");
+        valorPositivoNegativo()
+    }
+}
